@@ -1,55 +1,48 @@
-#### Video Tutorial for this project
-https://youtu.be/SQ4A7Q6_md8
-<br><br>
+# Wagtail Project
 
-#### Getting the files
-Download zip file<br> 
-or <br>
-git clone command (need git to be installed) and remove git folder afterwards
-```
-git clone https://github.com/andyjud/django-starter.git . && rm -rf .git
-```
-<br><br><br>
+This is a content management system built with Wagtail, a Django-based CMS framework.
 
 ## Setup
 
-#### - Create Virtual Environment
-###### # Mac
-```
-python3 -m venv venv
+1. Create virtual environment:
+```bash
+python -m venv venv
 source venv/bin/activate
 ```
 
-###### # Windows
-```
-python3 -m venv venv
-.\venv\Scripts\activate.bat
-```
-
-<br>
-
-#### - Install dependencies
-```
-pip install --upgrade pip
+2. Install dependencies:
+```bash
 pip install -r requirements.txt
 ```
 
-<br>
-
-#### - Migrate to database
-```
+3. Run migrations:
+```bash
 python manage.py migrate
+```
+
+4. Create superuser:
+```bash
 python manage.py createsuperuser
 ```
 
-<br>
-
-#### - Run application
-```
+5. Start development server:
+```bash
 python manage.py runserver
 ```
 
-<br>
+## Features
+
+- Django-based CMS
+- Customizable admin interface
+- Built-in SEO tools
+- Image manipulation
+- Content versioning
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Submit a pull request
 
 #### - Generate Secret Key ( ! Important for deployment ! )
 ```
@@ -58,5 +51,6 @@ from django.core.management.utils import get_random_secret_key
 print(get_random_secret_key())
 exit()
 ```
+## License
 
-
+This project is licensed under the MIT License.
